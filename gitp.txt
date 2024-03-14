@@ -6,3 +6,8 @@ spec:
           - matchExpressions:
               - key: kubernetes.io/hostname
                 operator: Exists
+
+containers:
+    - command: ["sleep", "3600"]
+      name: pod-node-affinity-container
+      image: busybox
